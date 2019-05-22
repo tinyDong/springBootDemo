@@ -1,11 +1,17 @@
 package com.example.demo.Dto;
 
-import javax.validation.constraints.NotNull;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+import javax.validation.constraints.NotNull;
+@ApiModel(value="user对象",description="用户对象user")
 public class User {
+
     @NotNull(message="userName不能空")
+    @ApiModelProperty(value="姓名",name="name",required=true)
     private String name;
 
+    @ApiModelProperty(value="年龄",name="age",required=true)
     private Integer age;
 
     public String getName() {
