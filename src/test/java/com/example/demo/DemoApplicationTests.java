@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.controller.HelloController;
-import org.assertj.core.util.Strings;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
